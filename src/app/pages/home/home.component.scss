@@ -1,0 +1,10 @@
+@import "../../../variables.scss";
+section{
+    margin: 5% 0%;
+    height: 900px;
+}
+.d-flex{
+    background-color: $bg-gray;
+    // height: 900px;
+    overflow-y: scroll;
+}

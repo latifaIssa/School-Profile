@@ -1,0 +1,29 @@
+<div class="card text-right" >
+    <div class="card-header bg-light">
+      الصفوف
+    </div>
+   <div class="table-wrapper-scroll-y my-custom-scrollbar">
+    <table class="table bg-light mt-3 table-borderless">
+        <thead>
+          <tr>
+            <th scope="col">اسم الصف</th>
+            <th scope="col">المربي</th>
+            <th scope="col">عدد الطلاب</th>
+            <th scope="col">بيانات</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let class of classes; index as i; odd as isOdd; even as isEven;"
+        >
+          <tr [ngClass]="{even: isEven, odd: isOdd}">
+            <th scope="row">{{class?.name}}</th>
+            <td>{{class?.teacher}}</td>
+            <td class="color">{{class?.studentsNum}}</td>
+            <td><button type="button" class="btn btn-circle btn-sm">
+                <i class="fa fa-id-card" aria-hidden="true"></i>
+            </button></td>
+          </tr>
+         
+        </tbody>
+      </table>
+   </div>
+  </div>

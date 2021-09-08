@@ -1,0 +1,47 @@
+@import "../../../variables.scss";
+.card{
+    // background-color: rgb(240, 222, 222) !important;
+    box-shadow: $bg-shadow;
+    .bg-light{
+        background-color: white !important;
+    }
+    .table{
+        // display: block;
+        height: 80% !important;
+        overflow-y: scroll !important;
+        .tbody{
+            display: block;
+            max-height: 400px;
+            overflow-y: scroll;
+        }
+    }
+    .color{
+        color: $bg-primary;
+    }
+    .btn-circle{
+        border-radius: 25px;
+        font-size: 12px;
+        text-align: center;
+        background-color: #9589ff;
+        color: white;
+    }
+    
+   
+}
+.my-custom-scrollbar {
+    position: relative;
+    height: 500px;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
+
+.even {
+    background-color:#f9fbfc !important;
+  }
+  
+  .odd {
+    background-color:#ffffff !important;
+   
+  }

@@ -1,0 +1,19 @@
+@import "../../../variables.scss";
+*{
+    color: #fff;
+}
+.card{
+    background-color: $bg-primary;
+    box-shadow: $bg-shadow;
+    height: 80% !important;
+}
+.card-container{
+    height: 700px;
+}
+.rounded-circle{
+    // border-radius: $border-radius;
+    width: 60%;
+    height: 90%;
+    border-color: $bg-primary;
+    border-width: 2px;
+}
